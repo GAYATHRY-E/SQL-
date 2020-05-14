@@ -1,0 +1,8 @@
+create table student(
+rollno int,
+name varchar(20) NOT NULL,
+DOB date default sysdate,
+address varchar(20),
+mark int  check(mark>0),
+primary key(rollno),
+constraint c1 unique(name,address)); 
